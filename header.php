@@ -8,15 +8,15 @@
             <div class="header-menu">
                 <?php
                     $header_menu = [
-                        ['href' => '#', 'link' => 'Главная'],
-                        ['href' => '#', 'link' => 'Политика'],
-                        ['href' => '#', 'link' => 'Общество'],
-                        ['href' => '#', 'link' => 'Экономика'],
-                        ['href' => '#', 'link' => 'В мире'],
-                        ['href' => '#', 'link' => 'Проишествия'],
-                        ['href' => '#', 'link' => 'Спорт'],
-                        ['href' => '#', 'link' => 'Наука'],
-                        ['href' => '#', 'link' => 'Туризм'],
+                        ['href' => 'index.php', 'link' => 'Главная'],
+                        ['href' => 'index.php?id=politics', 'link' => 'Политика'],
+                        ['href' => 'index.php?id=society', 'link' => 'Общество'],
+                        ['href' => 'index.php?id=economy', 'link' => 'Экономика'],
+                        ['href' => 'index.php?id=world', 'link' => 'В мире'],
+                        ['href' => 'index.php?id=incidents', 'link' => 'Проишествия'],
+                        ['href' => 'index.php?id=sport', 'link' => 'Спорт'],
+                        ['href' => 'index.php?id=science', 'link' => 'Наука'],
+                        ['href' => 'index.php?id=tourism', 'link' => 'Туризм'],
                     ];
                     drawMenu($header_menu, true);
                 ?>

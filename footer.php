@@ -3,10 +3,27 @@
             <div class="footer-container">
                 <div class="footer-menu">
                     <div class="menu-col-1">
-                        <?=drawMenu($footer_menu_col1);?>
+                    <?php
+                        $footer_menu_col1 = [
+                            ['href' => 'index.php', 'link' => 'Главная'],
+                            ['href' => 'index.php?id=politics', 'link' => 'Политика'],
+                            ['href' => 'index.php?id=society', 'link' => 'Общество'],
+                            ['href' => 'index.php?id=economy', 'link' => 'Экономика'],
+                            ['href' => 'index.php?id=world', 'link' => 'В мире'],
+                        ];
+                        drawMenu($footer_menu_col1);
+                    ?>
                     </div>
                     <div class="menu-col-2">
-                        <?=drawMenu($footer_menu_col2);?>
+                        <?php
+                            $footer_menu_col2 = [
+                                ['href' => 'index.php?id=incidents', 'link' => 'Проишествия'],
+                                ['href' => 'index.php?id=sport', 'link' => 'Спорт'],
+                                ['href' => 'index.php?id=science', 'link' => 'Наука'],
+                                ['href' => 'index.php?id=tourism', 'link' => 'Туризм'],
+                            ];
+                            drawMenu($footer_menu_col2);
+                        ?>
                     </div>
                 </div>
                 <div class="footer-logo">
