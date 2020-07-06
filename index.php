@@ -1,4 +1,5 @@
 <?php
+    require_once 'cookie.php';
     require_once 'components/menu.php';
     require_once 'components/news-item.php';
     $title = 'Новостное агенство';
@@ -44,7 +45,7 @@
     <div id="black-bar">
         <div class="fixed-container">
             Самые <a href="#">свежие новости</a> в реальном времени
-            <div id="datetime">12:30 15.06.2020</div>
+            <div id="datetime"><?=$lastVisit?></div>
         </div>
     </div>
     <?php
